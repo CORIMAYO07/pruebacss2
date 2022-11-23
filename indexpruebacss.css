@@ -1,0 +1,416 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+/*configurar toda la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-weight: bold;
+}
+h2{
+    font-weight: 500;
+}
+p{
+    font-weight: 400;
+}
+
+/*configuraciones generales*/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+body  html{
+    overflow-x: hidden;
+}
+
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+/*final de configuraciones generales*/
+
+/*header  y tituloss*/
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./imagenes/portada.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+header::before{
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.81), transparent);
+}
+
+.logo__container{
+    width: 10%;
+}
+.logo{
+    width: 100%;
+    display: flex;
+    object-fit: contain;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.titulo__portada{
+    font-size: 40px;
+    
+}
+
+.header-content h2{
+    font-size: 4vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: #de4e3a;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn{
+     color: whitesmoke;
+     background-color: #de4e3a;
+     padding-top: 8px;
+     padding-bottom: 8px;
+     padding-left: 10px;
+     padding-right: 10px;
+     border-radius: 12px;
+}
+/*final de header y titulos*/
+
+/*inicio de navbar*/
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    z-index: 999;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li{
+    margin: 0 20px;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+}
+/*final del navbar*/
+
+/*segunda parte de la pagina*/
+.tittle{
+    text-align: center;
+    font-size: 4vmin;
+    color: black;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.row .col{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+.events .row{
+    margin-top: 50px;
+}
+
+h4{
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+
+}
+
+p{
+    color:#707070;
+    padding: 0px 40px;
+}
+
+.ct2{
+    color: whitesmoke;
+    background-color: #de4e3a;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 12px;
+}
+.container__ct2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.events .ct2{
+    margin-top: 20px;
+}
+
+.img{
+    height: 400px;
+    width: 100%;
+    padding-left: 100px;
+    object-fit: cover;
+}
+/*final de la segunda parte de la pagina*/
+
+/*inicio de la tercera parte*/
+
+.explore{
+    width: 100%;
+    height: 100vh;
+   background-image: url("./imagenes/imagen\ naruto\ grande.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+.explore::before{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.explore-content{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 50px;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.explore-content h1{
+    font-size: 7vmin;
+
+}
+.explore-content .line {
+    margin-bottom: 50px;
+
+}
+.explore-content p{
+    color: rgb(221,221,221);
+    text-align: center;
+
+}
+
+.ctn3 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 30px;
+
+    background-color: #de4e3a;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+section{
+    width: 80%;
+    margin: 80px auto;
+
+}
+/*final de tercera partr*/
+/*cuarta parte*/
+/*cuarta parte de la pagina*/
+.tours {
+    /* padding-left: 250px; */
+}
+
+
+.tours .image-gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    width: 50%;
+}
+
+
+.tours .image-gallery img{
+width: 100%;
+height: 200px;
+object-fit: cover;
+display: flex;
+}
+.tours .row .col{
+    width: 50%;
+}
+
+
+
+.content-col h1{
+    font-size: 7vmin;
+    color: #484872;
+}
+div > div > img{
+    width: 250px;
+    padding: 10px;
+}
+
+.content-col line{
+    border-left: 50px;
+}
+
+.content-col p{
+    padding: 0;
+    margin: 30px auto;
+}
+
+.ctn4{
+    padding: 15px 5px;
+    padding-left: 5px;
+    margin: 20px auto;
+    background: #de4e3a;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.footer{
+    width: 100%;
+    padding: 20px 80px;
+    margin: 0;
+    background-color: #de4e3a;
+    text-align: center;
+}
+.footer p{
+    color: white;
+}
+
+.contacto-portada{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacto-portada::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    content: "";
+    z-index: 5;
+}
+.video-contacto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contacto-portada .row{
+    position: relative;
+    z-index: 5;
+    display: flex;
+    width: 100%;
+}
+
+.contacto-portada .col{
+    width: 50%;
+}
+
+.contacto-portada .contacto-texto h1{
+    font-size: 40px;
+    color: #fff;
+    padding: 0px 40px;
+}
+
+.contacto-portada .contacto-texto p{
+    font-size: 18px;
+    color: #fff;
+}
+.contacto-portada .formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacto-portada .formulario form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contacto-portada .formulario form input{
+    height: 40px;
+    border: 0;
+    padding-left: 16px;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 6px;
+}
+
+.contacto-portada .formulario form textarea{
+    padding: 16px;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 6px;
+}
+
+.contacto-portada .formulario form button{
+    height: 50px;
+    border: 0;
+    outline: none;
+    background-color: #de4e3a;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 10px;
+}
